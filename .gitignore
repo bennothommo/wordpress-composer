@@ -1,0 +1,11 @@
+# Ignore directories managed by Composer
+wordpress/*
+
+# Ignore config file
+.env
+
+# Ignore .htaccess, as plugins like writing to this file
+.htaccess
+
+# Ignore Composer lockfile
+composer.lock

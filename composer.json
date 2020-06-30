@@ -1,0 +1,39 @@
+{
+    "name": "bennothommo/wordpress-bootstrap",
+    "description": "Bootstraps a Wordpress website using Composer.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Ben Thomson",
+            "email": "ben@abweb.com.au"
+        }
+    ],
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "^5.4",
+        "wpackagist-theme/twentytwenty": "1.4",
+        "wpackagist-plugin/slate-admin-theme":"1.2.2",
+        "vlucas/phpdotenv": "^5.0"
+    },
+    "config": {
+        "vendor-dir": "content/vendor"
+    },
+    "extra": {
+        "installer-paths": {
+            "content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "content/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "wordpress-install-dir": "wordpress"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "./cli keys"
+        ]
+    }
+}
