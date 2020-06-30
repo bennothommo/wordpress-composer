@@ -36,3 +36,10 @@ This should start up the installer.
 ## License 
 
 MIT License. No warranties, or takebacksies, provided.
+
+## Acknowledgements
+
+Thanks to the following for making this type of setup possible, allowing sanity to reign once more.
+
+- [John P. Bloch](https://github.com/johnpbloch/wordpress)
+- [WPackagist](https://wpackagist.org/)
